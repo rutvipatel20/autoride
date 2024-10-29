@@ -1,0 +1,7 @@
+ALTER TABLE `vehicles` ADD `image` TEXT NULL AFTER `title`, ADD `fuel_type` VARCHAR(255) NULL AFTER `image`, ADD `persons` VARCHAR(255) NULL AFTER `fuel_type`;
+ALTER TABLE `vehicles` ADD `number_pate` VARCHAR(10) NULL AFTER `title`;
+
+ALTER TABLE `driver_user` ADD `adhar_card` INT(12) NOT NULL AFTER `is_free`;
+ALTER TABLE `book` ADD `time` VARCHAR(10) NULL AFTER `date`;
+
+ALTER TABLE `vehicles` ADD `description` TEXT NULL AFTER `persons`;
